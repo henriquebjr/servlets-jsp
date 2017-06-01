@@ -12,6 +12,6 @@ public class ListenerTester extends HttpServlet {
     out.println("test context attributes set by listener<br>");
     out.println("<br>");
     Dog dog = (Dog) getServletContext().getAttribute("dog");
-    out.println("Dog’s breed is: " + dog.getBreed());
+    out.println("Dog's breed is: " + dog.getBreed());
   }
 }

@@ -8,9 +8,10 @@ public class MyServletContextListener implements ServletContextListener {
 		String dogBreed = sc.getInitParameter("breed"); // Use the context to get the init parameter.
 		Dog d = new Dog(dogBreed);
 		sc.setAttribute("dog", d);
+		System.out.println("### initialized ###");
 	}
 
 	public void contextDestroyed(ServletContextEvent event) {
-		
+		System.out.println("### destroyed ###");
 	}
 }

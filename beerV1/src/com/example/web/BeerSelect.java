@@ -5,6 +5,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
 import java.util.*;
+import com.teste.pdftest.PdfTest;
 
 public class BeerSelect extends HttpServlet {
 
@@ -16,6 +17,7 @@ public class BeerSelect extends HttpServlet {
 			List options = expert.getBrands(c);
 
 			request.setAttribute("styles", options);
+			request.setAttribute("encrypt", PdfTest.testEncrypted());
 
 			RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 			view.forward(request, response);
