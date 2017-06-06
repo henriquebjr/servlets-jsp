@@ -13,7 +13,7 @@ public class CookieServlet extends HttpServlet {
 
     html.println("<html>");
     html.println("<body>");
-    html.println("<h1>Cookies 5!</h1>");
+    html.println("<h1>Cookies!</h1>");
 
     html.println("<form action='Cookie.do' method='post'>");
 
