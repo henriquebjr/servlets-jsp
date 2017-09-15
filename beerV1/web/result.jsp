@@ -13,10 +13,5 @@
 	}
 %>
 
-<%
-	Boolean encrypt = (Boolean) request.getAttribute("encrypt");
-	out.print("<br>encrypt: " + encrypt);
-%>
-
 </body>
 </html>

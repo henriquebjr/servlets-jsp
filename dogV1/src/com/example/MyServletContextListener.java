@@ -13,5 +13,9 @@ public class MyServletContextListener implements ServletContextListener {
 
 	public void contextDestroyed(ServletContextEvent event) {
 		System.out.println("### destroyed ###");
+		try {
+			Thread.sleep(10000);
+		} catch(Exception e) {
+		}
 	}
 }
